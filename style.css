@@ -106,10 +106,7 @@ body {
 
 /* media quarry for desktops */ 
 @media screen and (min-width: 900px){
-    #container {
-        width: 35%;
-        
-    }
+    
     body {
 
         /* centers div both way, THE RIGHT WAY */ 
