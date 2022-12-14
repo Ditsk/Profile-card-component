@@ -1,0 +1,129 @@
+body {
+    background-image: url(bg-pattern-top.svg), url(bg-pattern-bottom.svg);
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 40em, 40em;
+    background-position: absolute, absolute;
+    background-position-y: -17em, 35em;
+    background-position-x: -25em, 10em;
+
+    background-color: hsl(185, 75%, 39%);
+    font-family: "Kumbh Sans", sans-serif;
+    z-index: 0;
+    color: hsl(229, 23%, 23%);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100vh;
+    margin: auto 1em;   
+}
+
+
+.cover-img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.profile-img{
+    border-radius: 80px;
+    border: 0.5em white solid;
+    position: relative; 
+    z-index: 2;
+    margin: -3em auto;
+   
+}
+
+#profile {
+    
+    background-color: aliceblue;
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; 
+    margin-top: -2em;
+    border-radius: 0 0 10px 10px;
+    
+}
+
+#profile-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid hsl(227, 10%, 46%);
+    text-align: center;
+}
+
+#profile-bottom {
+    gap: 40px;
+    font-weight: 700;
+    
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    margin-top: 5em;
+    
+}
+
+.name-txt {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.age-txt {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+}
+
+.location {
+    margin-top: -1.5em;
+    color:hsl(227, 10%, 46%);
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.low-txt {
+    
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+    letter-spacing: 2px;
+}
+
+
+/* media quarry for desktops */ 
+@media screen and (min-width: 900px){
+    #container {
+        width: 35%;
+        
+    }
+    body {
+
+        /* centers div both way, THE RIGHT WAY */ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* background circle position and sizes */
+        background-size: 50em, 50em;
+        background-position: absolute;
+        background-position-y: -12em, 30em;
+        background-position-x: -10em, 40em;
+        color: hsl(229, 23%, 23%);
+    }
+    
+    
+}
